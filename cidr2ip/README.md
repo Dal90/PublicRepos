@@ -16,4 +16,4 @@ skills).
 
 But I can export a query from Splunk as a .csv and then use another PS script 
 that will compare that .csv to a list of all the IP addresses to determine if 
-we have traffic from them. 
+we have traffic from them.  
