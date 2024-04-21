@@ -3,6 +3,8 @@ Convert CIDR(s) to a list of IP addresses
 ```
     ./cidr2ip.ps1 -cidr 192.168.0.0/27
     ./cidrWrapperScript.ps1 -sourceFile ./AS24560.txt
+    # Use out-file to speed things up on large lists by avoiding stdout.
+    ./cidrWrapperScript.ps1 -sourceFile ./AS24560.txt | out-file .\AS25460_expanded.txt
 ```
 
 Background:
