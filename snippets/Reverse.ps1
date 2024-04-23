@@ -4,7 +4,7 @@
 # the order of words in a sentence. 
 
 # Be interesting if in the future I can do the actual reverse
-# letters
+# letters off the top of my head. 
 
 PS> $myvar="Hello World"        
 PS> $myvar2=($myvar).split''
