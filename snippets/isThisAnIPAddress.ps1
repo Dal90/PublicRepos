@@ -1,2 +1,4 @@
-$isThisAnIP="mattFoo"
-if ([ipaddress]::TryParse("$($isThisAnIP)",[ref]$null)) { echo "IP Address" } else { echo "Not an IP Address!" }
+param (
+    [parameter(mandatory)][string]$isThisAnIPAddress
+)
+if ([ipaddress]::TryParse("$($isThisAnIPAddress)",[ref]$null)) { return $true } else { return $false }
